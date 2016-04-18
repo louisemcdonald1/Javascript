@@ -3,30 +3,22 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
   </head>
 
   <body>
       <form>
+        <!-- Create a text box for user input-->
         <input type = "text" id="input1"/>
       </form>
         <div>
+            <!--Create a button for the form -->
             <button id="button1">Button</button>
         </div>
+      <!--Create a place for the output-->
       <div id="demo"></div>
-    <script>
-        //EVENT LISTENER
-        var event1 = document.getElementById("button1");
-        event1.addEventListener('click',myfirst,false);
-        
-        function myfirst(){
-            //user input 1
-            var userinput1 = document.getElementById("input1").value;
-            //output1
-            document.getElementById("demo").innerHTML = userinput1;
-      }
-    </script>
-      
+     
+    <script src="script.js"></script>  
   </body>
 
 </html>
