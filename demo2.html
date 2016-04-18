@@ -3,17 +3,30 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
-    
     <script src="script.js"></script>
   </head>
 
   <body>
+      <!--span has an id of demo to allow us to access it
+        in Javascript-->
     <span id="demo"></span>
     <script>
-    window.addEventListener('load',myfirst,false);
-    function myfirst(){
-      window.alert("Hello World using an Event Listener");
-      document.getElementById("demo").innerHTML = "Hello World";
+        //Add an event listener which calls the myfirst function
+        //when the webpage loads
+        //The window object has a method called addEventListener
+        //which accepts 3 arguments:
+        //1. event it is listening for
+        //2. function it is invoking
+        //3. boolean - generally set to false (to do with bubbling -
+        //not being covered now
+        window.addEventListener('load',myfirst,false);
+        
+        //A function is a ser of instructions that can be called repeatedly in a program
+        function myfirst(){
+            //window object has an alert method which accepts a string argument
+            window.alert("Hello World using an Event Listener");
+            //JS is accessing a DOM object (document) and a common method to write to the HTML page where there is an element with an id=demo
+            document.getElementById("demo").innerHTML = "Hello World";
       }
     </script>
       
