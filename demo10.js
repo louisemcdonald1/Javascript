@@ -12,7 +12,7 @@ function addUp(){
     
     var num1 = parseInt(userinput1);
     var num2 = parseInt(userinput2);   
-    
+    ``
     var greaterThanMessage = " is greater than 10";
   
     var bothMessagePt2 = " are greater than 10"
