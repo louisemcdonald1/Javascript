@@ -9,6 +9,6 @@ function myfirst(){
     //alert("event listener is working");
     //Get the value from the text box and save it to local variable
     var userinput1 = document.getElementById("input1").value;
-    //Display the text box value on the screen
+    //Display the contents of the text box value on the screen
     document.getElementById("demo").innerHTML = userinput1;
 }
