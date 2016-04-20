@@ -21,17 +21,23 @@ function calculateInterest() {
     //loan amount
     var usersLoanInput = document.getElementById("tbLoan").value;
     var loan = parseInt(usersLoanInput);
-    document.getElementById("feedback1").innerHTML = "loan is " + loan;
+    //document.getElementById("feedback1").innerHTML = "loan is " + loan;
     //rate
     var usersRateInput = document.getElementById("tbRate").value;
     var rate = parseInt(usersRateInput);
-    document.getElementById("feedback2").innerHTML = "rate is " + rate;
-    //
-     var usersTermInput = document.getElementById("tbTerm").value;
+    //document.getElementById("feedback2").innerHTML = "rate is " + rate;
+    //term
+    var usersTermInput = document.getElementById("tbTerm").value;
     var term = parseInt(usersTermInput);
-    document.getElementById("debug").innerHTML = " users guessed number is " + usersLoanInput;
+    //document.getElementById("debug").innerHTML = "term is " + term;
+    
     //calculate interest
+    var ratePerCent = rate/100;
+    var totalInterest = loan * ratePerCent * term;
+    var monthlyRepayment = totalInterest/(term * 12);
     
     //display result
+    document.getElementById("feedback1").innerHTML = "Your monthly interest repayment will be:   £" + monthlyRepayment;
+    document.getElementById("feedback2").innerHTML = "The total amount of interest you will pay is:  £" + totalInterest;
 }
 
