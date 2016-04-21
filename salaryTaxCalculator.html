@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <!-- this is mini-project 1 -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="bootstrap.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="bootstrap.js"></script> 
+    <!--<link rel="stylesheet" href="style.css">-->
+    
+  </head>
+
+  <body>
+        <div class = "container">
+            <div class="row text-center well">
+                <h2 class="text-danger">Salary Tax Calculator</h2>
+                <br/>
+                <h3 class="text-primary">Please enter your gross salary to find out how much tax you will pay (national insurance not calculated)</h3>
+                <br/>
+                <br/>
+                <div>
+                    <!--Create a text box for user input-->
+                    <span class="text-lg">Please enter your gross salary:</span>
+                    <input type="number input-lg" id="tbGrossSalary">            
+                    <!--Create a button -->
+                    <button id="buttonGuess" class="btn-lg btn-primary">Calculate Tax</button>
+                </div>
+            </div>    
+            <div>
+            <!--Create a place for the output-->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Gross salary: </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="grossSalaryOutput">grossSalaryOutput</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Tax free allowance:</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="taxFreeOutput">taxFreeOutput</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                       <p>Tax paid at 20%:</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="taxedAt20Output">taxedAt20Output</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Tax paid at 40%:</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="taxedAt40Output">taxedAt40Output</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Net salary: </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="netSalaryOutput">netSalaryOutput</p>
+                    </div>
+                </div>
+                <!-- end row -->    
+            <div id="debug"></div> 
+            </div>
+        </div>
+    <script src="salaryTaxCalculator.js"></script> 
+    
+  </body>
+
+</html>

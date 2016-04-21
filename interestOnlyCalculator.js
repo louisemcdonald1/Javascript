@@ -32,9 +32,8 @@ function calculateInterest() {
     //document.getElementById("debug").innerHTML = "term is " + term;
     
     //calculate interest
-    var ratePerCent = rate/100;
-    var totalInterest = loan * ratePerCent * term;
-    var monthlyRepayment = totalInterest/(term * 12);
+    var totalInterest = (loan * (rate/100) * term).toFixed(2);
+    var monthlyRepayment = (totalInterest/(term * 12)).toFixed(2);
     
     //display result
     document.getElementById("feedback1").innerHTML = "Your monthly interest repayment will be:   £" + monthlyRepayment;
